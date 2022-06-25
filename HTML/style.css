@@ -1,0 +1,62 @@
+/* 
+., # 
+*/
+
+/* display : inline,block,none,inline-block,flex,grid  */
+/* position: static,relative,fixed,absolute,sticky */
+
+.main-div{
+    background-color:yellowgreen;
+    color:red;
+    padding:5px;
+    box-sizing: border-box;
+    height:600px;
+}
+
+/*
+relative and fixed 
+*/
+
+
+.inner-div{
+    padding:30px;
+    margin:20px;
+    border:3px solid yellow;
+    position: sticky;
+    top:0px;
+    right:0px;
+}
+
+#car-names{
+    border:3px solid firebrick;
+   
+}
+
+p{
+  
+    position:absolute;
+    top:0px;
+    right:0px;
+
+}
+
+span{
+    border:3px solid red;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+}
+
+body{
+    height:3000px;
+}
+
+.navbar{
+    border:3px solid red;
+    background-color:black;
+    padding:20px;
+    margin:10px;
+    position: sticky;
+    top:0px;
+    z-index:-2;
+}
