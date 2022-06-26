@@ -1,62 +1,70 @@
-/* 
-., # 
-*/
-
-/* display : inline,block,none,inline-block,flex,grid  */
-/* position: static,relative,fixed,absolute,sticky */
-
-.main-div{
-    background-color:yellowgreen;
-    color:red;
-    padding:5px;
-    box-sizing: border-box;
-    height:600px;
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:black;
+    color: white;
 }
 
-/*
-relative and fixed 
-*/
-
-
-.inner-div{
-    padding:30px;
-    margin:20px;
-    border:3px solid yellow;
-    position: sticky;
-    top:0px;
-    right:0px;
-}
-
-#car-names{
-    border:3px solid firebrick;
+.navbar button{
+    background-color: white;
+    height:80%;
+    padding:10px;
    
 }
 
-p{
-  
-    position:absolute;
-    top:0px;
-    right:0px;
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding:80px;
+}
+
+
+.albums{
+
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
-span{
-    border:3px solid red;
-    position: absolute;
-    right:0px;
-    bottom:0px;
+.album{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid lightgrey;
+    border-radius: 4px;
+    margin:15px;
 }
 
-body{
-    height:3000px;
+.album .thumbnail{
+    width:100%;
 }
 
-.navbar{
-    border:3px solid red;
-    background-color:black;
-    padding:20px;
-    margin:10px;
-    position: sticky;
-    top:0px;
-    z-index:-2;
+.album .thumbnail img{
+    height:100%;
+    width:100%;
+}
+
+.album .details p{
+    text-align: center;
+}
+
+.album .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.album .details .details-footer{
+
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
 }
