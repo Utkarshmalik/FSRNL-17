@@ -15,10 +15,18 @@
 
 
 .about{
+    padding:40px;
     display: flex;
     flex-direction: column;
-    align-items:center;
-    padding:80px;
+    align-items: center;
+}
+
+#addAlbum{
+    width:40%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding:10px;
 }
 
 
