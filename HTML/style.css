@@ -15,64 +15,56 @@
 
 
 .about{
-    padding:40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#addAlbum{
-    width:40%;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    padding:10px;
-}
 
-
-.albums{
-
-    background-color: whitesmoke;
+.users{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-}
-
-.album{
-    width:300px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    border:1px solid lightgrey;
-    border-radius: 4px;
-    margin:15px;
+    display:none;
+
 }
 
-.album .thumbnail{
+
+.user{
+    border: 3px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:280px;
+    padding:20px;;
+    margin:10px;
+}
+
+.user-image{
     width:100%;
-}
-
-.album .thumbnail img{
-    height:100%;
-    width:100%;
-}
-
-.album .details p{
     text-align: center;
 }
 
-.album .details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
+.user img{
+    width:90%;
 }
 
-.album .details .details-footer{
+.user button{
+    padding:8px;
+    border:2px solid black;
+    color: white;
+    border-radius:3px;
+    background-color:black;
+    cursor: pointer;
+}
 
-    width:100%;
+.message{
+    text-align: center;
+}
+
+.search-field{
     display: flex;
-    justify-content: space-between;
-    padding:5px;
+    justify-content: center;
 }
