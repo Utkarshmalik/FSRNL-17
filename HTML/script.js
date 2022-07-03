@@ -91,4 +91,17 @@ fetch("https://dummyapi.io/data/v1/user",{
 
 
 
+
+    /*
+- Attach an event listeners to buttons inside 
+- When a button is clicked 
+   - Check which user is clicked 
+   - make a API call with /user/id
+   - add/create a modal component with the data from the users 
+   - show the model 
+- Add a X button at the top right of the modal 
+  - when this button is clicked : the model should be hidden   
+*/
+
+
     
