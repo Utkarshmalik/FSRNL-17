@@ -1,19 +1,52 @@
+import React from "react";
 import User  from "../User/user";
+import Spinner from 'react-bootstrap/Spinner';
 
-const users=[{name:"utkarsh",age:27},{name:"Rahul",age:34}];
+import './users.css';
 
-function Users(){
 
-    return (
-        <div>
-        <h1> This is users component </h1>
+class Users extends React.Component{
+
+    constructor(){
+        super();
+        this.state={isLoading:true,usersData:[]};
+    }
+
+    componentDidMount(){
+        fetch("https://dummyapi.io/data/v1/user/",{
+            headers:{
+                "app-id":"62c1b1b65b25e6a595ee427b"
+            }
+        }).then(data=>data.json())
+        .then(data=>{
+           this.setState({isLoading:false,usersData:data.data});
+        })
+    }
+
+     showSpinner(){
+      
+        return   <Spinner animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+        </Spinner>
+    }
+
+    showUsers(){
+        return  <div className="usersDiv">
         {
-            users.map((user)=>{
-                return <User name={user.name} age={user.age} />
+            this.state.usersData.map((user)=>{
+                return <User data={user} />
             })
         }
         </div>
-    )
+    }
+   
+
+    render(){
+        return <div>
+            <h1> Employee List</h1>
+            {(this.state.isLoading)?this.showSpinner() :this.showUsers()}
+       </div>
+    }
 }
 
 
