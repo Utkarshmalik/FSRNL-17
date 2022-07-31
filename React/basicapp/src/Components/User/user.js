@@ -4,7 +4,12 @@ import './user.css';
 
 
 function User(props){
-    const {data}=props;
+    const {data,openModel}=props;
+    
+
+    function onUserDetailsClick(){
+      openModel(data.id);
+    }
 
     return (
         <Card className="userCard">
@@ -15,7 +20,7 @@ function User(props){
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary"> See Details </Button>
+        <Button onClick={onUserDetailsClick} variant="primary"> See Details </Button>
       </Card.Body>
     </Card>
     )

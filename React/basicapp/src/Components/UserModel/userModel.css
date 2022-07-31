@@ -1,0 +1,21 @@
+.userModel{
+    border:3px solid white;
+    width:80vw;
+    height:60vh;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    background-color: rgba(1, 1, 1, 0.9);
+    z-index:5;
+    color: white;
+
+}
+
+.userModalBody{
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
